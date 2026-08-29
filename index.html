@@ -1,1204 +1,334 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Deepak | Portfolio</title>
-
-    <meta name="description"
-          content="Deepak's personal portfolio website">
-
-    <link rel="stylesheet" href="style.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-          rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Deepak — Developer Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
 
-<!-- ================= NAVBAR ================= -->
+<div class="grid-overlay" aria-hidden="true"></div>
+<div class="scanline" aria-hidden="true"></div>
 
-<header class="navbar">
+<!-- NAV -->
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="#home" class="nav-logo">D<span class="logo-dot">.</span></a>
+    <ul class="nav-links">
+      <li><a href="#home" class="nav-link active">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#profiles" class="nav-link">Profiles</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
 
-    <div class="container nav-container">
+<!-- HERO -->
+<header class="hero" id="home">
+  <div class="hero-glow hero-glow--1" aria-hidden="true"></div>
+  <div class="hero-glow hero-glow--2" aria-hidden="true"></div>
 
-        <a href="#home" class="logo">
-            &lt;<span>Deepak</span>/&gt;
-        </a>
+  <div class="hero-content">
+    <p class="eyebrow"><span class="eyebrow-dot"></span>SYSTEM ONLINE · UNIVERSITY STUDENT</p>
+    <h1 class="hero-name">DEEPAK</h1>
+    <p class="hero-tagline">Building Ideas Into Digital Experiences.</p>
+    <p class="hero-sub">Aspiring Developer · Web Development · Artificial Intelligence · UI/UX</p>
 
-        <input type="checkbox" id="menu-toggle">
-
-        <label for="menu-toggle" class="menu-icon">
-            <span></span>
-            <span></span>
-            <span></span>
-        </label>
-
-        <nav class="nav-menu">
-
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#education">Education</a>
-            <a href="#achievements">Achievements</a>
-            <a href="#contact">Contact</a>
-
-        </nav>
-
+    <div class="hero-actions">
+      <a href="#projects" class="btn btn-primary">
+        <span>View Projects</span>
+      </a>
+      <a href="#" class="btn btn-secondary" target="_blank" rel="noopener">
+        <svg class="btn-icon" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+        <span>GitHub</span>
+      </a>
     </div>
 
+    <div class="hero-scroll" aria-hidden="true">
+      <span>SCROLL</span>
+      <div class="scroll-line"></div>
+    </div>
+  </div>
 </header>
-
 
 <main>
 
-<!-- ================= HERO ================= -->
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="section-inner">
+      <p class="section-eyebrow">// About</p>
+      <h2 class="section-title">Who I Am</h2>
 
-<section id="home" class="hero">
+      <div class="about-grid">
+        <div class="about-card glass">
+          <p class="about-text">
+            I'm Deepak, a university student based in India, currently learning how to turn ideas into working
+            software. My focus right now is web development and artificial intelligence — I like understanding
+            how systems are built from the ground up, from a clean UI down to the logic that powers it.
+          </p>
+          <p class="about-text">
+            Outside of coursework, I explore emerging technologies, experiment with AI tools and prompt engineering,
+            and work on small projects that push me to learn something new — whether that's a hardware-linked
+            web app or a cleaner way to structure a UI.
+          </p>
+        </div>
 
-    <div class="hero-grid"></div>
+        <div class="about-meta">
+          <div class="meta-item glass">
+            <span class="meta-label">Location</span>
+            <span class="meta-value">India</span>
+          </div>
+          <div class="meta-item glass">
+            <span class="meta-label">Role</span>
+            <span class="meta-value">University Student</span>
+          </div>
+          <div class="meta-item glass">
+            <span class="meta-label">Focus</span>
+            <span class="meta-value">Web Dev · AI · UI/UX</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <div class="floating-circle circle-one"></div>
-    <div class="floating-circle circle-two"></div>
-    <div class="floating-circle circle-three"></div>
+  <!-- SKILLS -->
+  <section class="section" id="skills">
+    <div class="section-inner">
+      <p class="section-eyebrow">// Skills</p>
+      <h2 class="section-title">Tech Stack</h2>
 
-    <div class="container hero-content">
+      <div class="skills-grid">
 
-        <div class="hero-text">
+        <div class="skill-card glass">
+          <div class="skill-icon">&lt;/&gt;</div>
+          <h3 class="skill-name">HTML</h3>
+          <div class="skill-bar"><div class="skill-fill" style="--level:90%"></div></div>
+        </div>
 
-            <p class="hero-small">
-                👋 Hello, I'm
+        <div class="skill-card glass">
+          <div class="skill-icon">{ }</div>
+          <h3 class="skill-name">CSS</h3>
+          <div class="skill-bar"><div class="skill-fill" style="--level:85%"></div></div>
+        </div>
+
+        <div class="skill-card glass">
+          <div class="skill-icon">JS</div>
+          <h3 class="skill-name">JavaScript</h3>
+          <div class="skill-bar"><div class="skill-fill" style="--level:75%"></div></div>
+        </div>
+
+        <div class="skill-card glass">
+          <div class="skill-icon">⇄</div>
+          <h3 class="skill-name">Data Structures &amp; Algorithms</h3>
+          <div class="skill-bar"><div class="skill-fill" style="--level:70%"></div></div>
+        </div>
+
+        <div class="skill-card glass">
+          <div class="skill-icon">✦</div>
+          <h3 class="skill-name">AI Tools</h3>
+          <div class="skill-bar"><div class="skill-fill" style="--level:78%"></div></div>
+        </div>
+
+        <div class="skill-card glass">
+          <div class="skill-icon">»</div>
+          <h3 class="skill-name">Prompt Engineering</h3>
+          <div class="skill-bar"><div class="skill-fill" style="--level:82%"></div></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+    <div class="section-inner">
+      <p class="section-eyebrow">// Projects</p>
+      <h2 class="section-title">What I've Built</h2>
+
+      <div class="projects-list">
+
+        <article class="project-card glass">
+          <div class="project-index">01</div>
+          <div class="project-body">
+            <h3 class="project-title">AquaPulse — Smart Water Bottle</h3>
+            <p class="project-desc">
+              A smart water bottle concept designed to track hydration and connect physical hardware with a
+              digital interface, blending IoT thinking with practical everyday use.
             </p>
+            <div class="project-tags">
+              <span class="tag">IoT</span>
+              <span class="tag">UI/UX</span>
+              <span class="tag">Product Design</span>
+            </div>
+            <div class="project-actions">
+              <a href="#" class="btn btn-ghost btn-sm" target="_blank" rel="noopener">GitHub</a>
+              <a href="#" class="btn btn-ghost btn-sm" target="_blank" rel="noopener">Live Demo</a>
+            </div>
+          </div>
+        </article>
 
-            <h1>
-                <span class="gradient-text">Deepak</span>
-            </h1>
-
-            <h2>
-                Computer Science Student
-                <br>
-
-                <span class="typing">
-                    Developer & Tech Enthusiast
-                </span>
-            </h2>
-
-            <p class="hero-description">
-
-                I'm a Computer Science student passionate about
-                programming, web development and technology.
-                I enjoy building projects, solving problems and
-                learning new things.
-
+        <article class="project-card glass">
+          <div class="project-index">02</div>
+          <div class="project-body">
+            <h3 class="project-title">Interactive Web Projects</h3>
+            <p class="project-desc">
+              A collection of front-end builds focused on interactivity and clean UI — practical exercises in
+              HTML, CSS and JavaScript aimed at strengthening core web development fundamentals.
             </p>
-
-            <div class="hero-buttons">
-
-                <a href="#projects" class="btn primary-btn">
-                    View My Projects →
-                </a>
-
-                <a href="#contact" class="btn secondary-btn">
-                    Contact Me
-                </a>
-
+            <div class="project-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
             </div>
-
-            <div class="social-links">
-
-                <a href="mailto:yarlapalli.deepak@gmail.com">
-                    @
-                </a>
-
-                <a href="#" target="_blank">
-                    GH
-                </a>
-
-                <a href="#" target="_blank">
-                    in
-                </a>
-
+            <div class="project-actions">
+              <a href="#" class="btn btn-ghost btn-sm" target="_blank" rel="noopener">GitHub</a>
+              <a href="#" class="btn btn-ghost btn-sm" target="_blank" rel="noopener">Live Demo</a>
             </div>
+          </div>
+        </article>
 
-        </div>
-
-
-        <!-- No photo -->
-
-        <div class="hero-visual">
-
-            <div class="developer-card">
-
-                <div class="code-top">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-
-                <div class="code-content">
-
-                    <p>
-                        <span class="purple">const</span>
-                        <span class="blue">developer</span>
-                        =
-                    </p>
-
-                    <p class="indent">
-                        {
-                    </p>
-
-                    <p class="indent">
-                        name:
-                        <span class="green">
-                            "Deepak"
-                        </span>,
-                    </p>
-
-                    <p class="indent">
-                        role:
-                        <span class="green">
-                            "Developer"
-                        </span>,
-                    </p>
-
-                    <p class="indent">
-                        passion:
-                        <span class="green">
-                            "Technology"
-                        </span>
-                    </p>
-
-                    <p>
-                        };
-                    </p>
-
-                </div>
-
-                <div class="available">
-                    <span></span>
-                    Available for Projects
-                </div>
-
+        <article class="project-card glass">
+          <div class="project-index">03</div>
+          <div class="project-body">
+            <h3 class="project-title">AI-Based Academic Projects</h3>
+            <p class="project-desc">
+              Coursework-driven explorations into applied AI — using AI tools and prompt engineering to solve
+              academic problems and understand how intelligent systems can be applied practically.
+            </p>
+            <div class="project-tags">
+              <span class="tag">AI</span>
+              <span class="tag">Prompt Engineering</span>
+              <span class="tag">Research</span>
             </div>
+            <div class="project-actions">
+              <a href="#" class="btn btn-ghost btn-sm" target="_blank" rel="noopener">GitHub</a>
+              <a href="#" class="btn btn-ghost btn-sm" target="_blank" rel="noopener">Live Demo</a>
+            </div>
+          </div>
+        </article>
 
-        </div>
-
+      </div>
     </div>
+  </section>
 
-    <a href="#about" class="scroll-down">
-        ↓
-    </a>
+  <!-- PROFILES -->
+  <section class="section" id="profiles">
+    <div class="section-inner">
+      <p class="section-eyebrow">// Profiles</p>
+      <h2 class="section-title">Find Me Online</h2>
 
-</section>
+      <div class="profiles-grid">
 
+        <a href="#" class="profile-card glass" target="_blank" rel="noopener">
+          <div class="profile-icon">
+            <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+          </div>
+          <div class="profile-text">
+            <h3>GitHub</h3>
+            <p>Code, repos &amp; projects</p>
+          </div>
+          <span class="profile-arrow">→</span>
+        </a>
 
-<!-- ================= ABOUT ================= -->
+        <a href="#" class="profile-card glass" target="_blank" rel="noopener">
+          <div class="profile-icon">
+            <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M14.82 0H1.18C.53 0 0 .52 0 1.17v13.66C0 15.48.53 16 1.18 16h13.64c.65 0 1.18-.52 1.18-1.17V1.17C16 .52 15.47 0 14.82 0ZM4.75 13.6H2.4V6.14h2.35v7.46ZM3.58 5.14a1.36 1.36 0 1 1 0-2.72 1.36 1.36 0 0 1 0 2.72Zm10.02 8.46h-2.35V9.97c0-.87-.02-1.99-1.21-1.99-1.22 0-1.4.95-1.4 1.93v3.69H6.29V6.14h2.26v1.02h.03c.31-.59 1.08-1.22 2.23-1.22 2.39 0 2.83 1.57 2.83 3.62v4.04Z"/></svg>
+          </div>
+          <div class="profile-text">
+            <h3>LinkedIn</h3>
+            <p>Professional profile</p>
+          </div>
+          <span class="profile-arrow">→</span>
+        </a>
 
-<section id="about" class="section">
-
-    <div class="container">
-
-        <div class="section-heading">
-
-            <p>GET TO KNOW ME</p>
-
-            <h2>
-                About <span>Me</span>
-            </h2>
-
-        </div>
-
-
-        <div class="about-grid">
-
-            <div class="about-number">
-
-                <span>01</span>
-
-                <h3>
-                    Turning ideas into
-                    <span>digital experiences.</span>
-                </h3>
-
-            </div>
-
-
-            <div class="about-content">
-
-                <p>
-                    I am a Computer Science student with a strong
-                    interest in programming, web development and
-                    emerging technologies.
-                </p>
-
-                <p>
-                    I enjoy creating projects that solve real-world
-                    problems and continuously improving my technical
-                    and creative skills.
-                </p>
-
-                <div class="about-info">
-
-                    <div>
-                        <strong>Name</strong>
-                        <span>Deepak</span>
-                    </div>
-
-                    <div>
-                        <strong>Field</strong>
-                        <span>Computer Science</span>
-                    </div>
-
-                    <div>
-                        <strong>Location</strong>
-                        <span>India</span>
-                    </div>
-
-                    <div>
-                        <strong>Email</strong>
-                        <span>
-                            yarlapalli.deepak@gmail.com
-                        </span>
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-
-        <div class="stats">
-
-            <div class="stat-card">
-                <span class="stat-number">10+</span>
-                <span>Projects</span>
-            </div>
-
-            <div class="stat-card">
-                <span class="stat-number">8+</span>
-                <span>Technologies</span>
-            </div>
-
-            <div class="stat-card">
-                <span class="stat-number">5+</span>
-                <span>Certificates</span>
-            </div>
-
-            <div class="stat-card">
-                <span class="stat-number">100%</span>
-                <span>Passion</span>
-            </div>
-
-        </div>
-
+      </div>
     </div>
-
-</section>
-
-
-<!-- ================= SKILLS ================= -->
-
-<section id="skills" class="section dark-section">
-
-    <div class="container">
-
-        <div class="section-heading">
-
-            <p>WHAT I KNOW</p>
-
-            <h2>
-                My <span>Skills</span>
-            </h2>
-
-        </div>
-
-
-        <div class="skills-grid">
-
-
-            <article class="skill-category">
-
-                <div class="skill-icon">
-                    01
-                </div>
-
-                <h3>Programming</h3>
-
-                <p>
-                    Languages I use to solve problems
-                    and develop applications.
-                </p>
-
-
-                <div class="skill">
-
-                    <div class="skill-name">
-                        <span>C</span>
-                        <span>85%</span>
-                    </div>
-
-                    <div class="skill-bar">
-                        <span style="width:85%"></span>
-                    </div>
-
-                </div>
-
-
-                <div class="skill">
-
-                    <div class="skill-name">
-                        <span>Python</span>
-                        <span>80%</span>
-                    </div>
-
-                    <div class="skill-bar">
-                        <span style="width:80%"></span>
-                    </div>
-
-                </div>
-
-
-                <div class="skill">
-
-                    <div class="skill-name">
-                        <span>Java</span>
-                        <span>65%</span>
-                    </div>
-
-                    <div class="skill-bar">
-                        <span style="width:65%"></span>
-                    </div>
-
-                </div>
-
-            </article>
-
-
-            <article class="skill-category">
-
-                <div class="skill-icon">
-                    02
-                </div>
-
-                <h3>Web Development</h3>
-
-                <p>
-                    Technologies I use to create
-                    modern websites.
-                </p>
-
-
-                <div class="skill">
-
-                    <div class="skill-name">
-                        <span>HTML</span>
-                        <span>95%</span>
-                    </div>
-
-                    <div class="skill-bar">
-                        <span style="width:95%"></span>
-                    </div>
-
-                </div>
-
-
-                <div class="skill">
-
-                    <div class="skill-name">
-                        <span>CSS</span>
-                        <span>90%</span>
-                    </div>
-
-                    <div class="skill-bar">
-                        <span style="width:90%"></span>
-                    </div>
-
-                </div>
-
-
-                <div class="skill">
-
-                    <div class="skill-name">
-                        <span>JavaScript</span>
-                        <span>60%</span>
-                    </div>
-
-                    <div class="skill-bar">
-                        <span style="width:60%"></span>
-                    </div>
-
-                </div>
-
-            </article>
-
-
-            <article class="skill-category">
-
-                <div class="skill-icon">
-                    03
-                </div>
-
-                <h3>Tools & Database</h3>
-
-                <p>
-                    Tools I use for development,
-                    databases and project management.
-                </p>
-
-                <div class="tool-list">
-
-                    <span>Git</span>
-                    <span>GitHub</span>
-                    <span>SQL</span>
-                    <span>VS Code</span>
-                    <span>MySQL</span>
-                    <span>Linux</span>
-
-                </div>
-
-            </article>
-
-        </div>
-
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section section--contact" id="contact">
+    <div class="section-inner">
+      <p class="section-eyebrow">// Contact</p>
+      <h2 class="section-title">Let's Connect</h2>
+      <p class="contact-text">
+        Open to conversations about web development, AI and building things together.
+        Reach out through GitHub or LinkedIn above, or drop a message below.
+      </p>
+
+      <a href="mailto:hello@example.com" class="btn btn-primary btn-lg">
+        <span>Say Hello</span>
+      </a>
     </div>
-
-</section>
-
-
-<!-- ================= PROJECTS ================= -->
-
-<section id="projects" class="section">
-
-    <div class="container">
-
-        <div class="section-heading">
-
-            <p>MY WORK</p>
-
-            <h2>
-                Featured <span>Projects</span>
-            </h2>
-
-        </div>
-
-
-        <div class="projects-grid">
-
-
-            <article class="project-card">
-
-                <div class="project-image project-one">
-
-                    <span>
-                        PROJECT 01
-                    </span>
-
-                </div>
-
-                <div class="project-content">
-
-                    <span class="project-number">
-                        01
-                    </span>
-
-                    <h3>
-                        Student Management System
-                    </h3>
-
-                    <p>
-                        A system for managing student
-                        information, marks and academic records.
-                    </p>
-
-                    <div class="technology-list">
-
-                        <span>C</span>
-                        <span>SQL</span>
-
-                    </div>
-
-                    <div class="project-links">
-
-                        <a href="#">
-                            GitHub ↗
-                        </a>
-
-                        <a href="#">
-                            Live Demo ↗
-                        </a>
-
-                    </div>
-
-                </div>
-
-            </article>
-
-
-            <article class="project-card">
-
-                <div class="project-image project-two">
-
-                    <span>
-                        PROJECT 02
-                    </span>
-
-                </div>
-
-                <div class="project-content">
-
-                    <span class="project-number">
-                        02
-                    </span>
-
-                    <h3>
-                        Personal Expense Tracker
-                    </h3>
-
-                    <p>
-                        A Python-based application for
-                        managing income and expenses.
-                    </p>
-
-                    <div class="technology-list">
-
-                        <span>Python</span>
-                        <span>File Handling</span>
-
-                    </div>
-
-                    <div class="project-links">
-
-                        <a href="#">
-                            GitHub ↗
-                        </a>
-
-                        <a href="#">
-                            Live Demo ↗
-                        </a>
-
-                    </div>
-
-                </div>
-
-            </article>
-
-
-            <article class="project-card">
-
-                <div class="project-image project-three">
-
-                    <span>
-                        PROJECT 03
-                    </span>
-
-                </div>
-
-                <div class="project-content">
-
-                    <span class="project-number">
-                        03
-                    </span>
-
-                    <h3>
-                        Attendance Management
-                    </h3>
-
-                    <p>
-                        A project designed to maintain
-                        and manage student attendance.
-                    </p>
-
-                    <div class="technology-list">
-
-                        <span>Python</span>
-                        <span>HTML</span>
-
-                    </div>
-
-                    <div class="project-links">
-
-                        <a href="#">
-                            GitHub ↗
-                        </a>
-
-                        <a href="#">
-                            Live Demo ↗
-                        </a>
-
-                    </div>
-
-                </div>
-
-            </article>
-
-
-            <article class="project-card">
-
-                <div class="project-image project-four">
-
-                    <span>
-                        PROJECT 04
-                    </span>
-
-                </div>
-
-                <div class="project-content">
-
-                    <span class="project-number">
-                        04
-                    </span>
-
-                    <h3>
-                        Personal Portfolio
-                    </h3>
-
-                    <p>
-                        A responsive portfolio website
-                        created using HTML and CSS.
-                    </p>
-
-                    <div class="technology-list">
-
-                        <span>HTML</span>
-                        <span>CSS</span>
-
-                    </div>
-
-                    <div class="project-links">
-
-                        <a href="#">
-                            GitHub ↗
-                        </a>
-
-                        <a href="#">
-                            Live Demo ↗
-                        </a>
-
-                    </div>
-
-                </div>
-
-            </article>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- ================= EDUCATION ================= -->
-
-<section id="education" class="section dark-section">
-
-    <div class="container">
-
-        <div class="section-heading">
-
-            <p>MY JOURNEY</p>
-
-            <h2>
-                Education <span>Timeline</span>
-            </h2>
-
-        </div>
-
-
-        <div class="timeline">
-
-
-            <div class="timeline-item">
-
-                <div class="timeline-dot"></div>
-
-                <div class="timeline-content">
-
-                    <span class="timeline-year">
-                        2024 - Present
-                    </span>
-
-                    <h3>
-                        Bachelor's Degree
-                    </h3>
-
-                    <h4>
-                        Computer Science
-                    </h4>
-
-                    <p>
-                        Currently pursuing my degree and
-                        developing technical skills in
-                        programming and technology.
-                    </p>
-
-                </div>
-
-            </div>
-
-
-            <div class="timeline-item">
-
-                <div class="timeline-dot"></div>
-
-                <div class="timeline-content">
-
-                    <span class="timeline-year">
-                        2022 - 2024
-                    </span>
-
-                    <h3>
-                        Intermediate / Higher Secondary
-                    </h3>
-
-                    <h4>
-                        Science & Mathematics
-                    </h4>
-
-                    <p>
-                        Developed a strong foundation in
-                        mathematics, science and computer
-                        fundamentals.
-                    </p>
-
-                </div>
-
-            </div>
-
-
-            <div class="timeline-item">
-
-                <div class="timeline-dot"></div>
-
-                <div class="timeline-content">
-
-                    <span class="timeline-year">
-                        School
-                    </span>
-
-                    <h3>
-                        Secondary Education
-                    </h3>
-
-                    <h4>
-                        High School
-                    </h4>
-
-                    <p>
-                        Built my academic foundation and
-                        developed an interest in technology.
-                    </p>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- ================= ACHIEVEMENTS ================= -->
-
-<section id="achievements" class="section">
-
-    <div class="container">
-
-        <div class="section-heading">
-
-            <p>MILESTONES</p>
-
-            <h2>
-                Achievements &
-                <span>Certificates</span>
-            </h2>
-
-        </div>
-
-
-        <div class="achievement-grid">
-
-
-            <article class="achievement-card">
-
-                <span class="achievement-icon">
-                    🏆
-                </span>
-
-                <h3>
-                    Academic Achievement
-                </h3>
-
-                <p>
-                    Add your academic achievement here.
-                </p>
-
-            </article>
-
-
-            <article class="achievement-card">
-
-                <span class="achievement-icon">
-                    📜
-                </span>
-
-                <h3>
-                    Certification
-                </h3>
-
-                <p>
-                    Add your certification details here.
-                </p>
-
-            </article>
-
-
-            <article class="achievement-card">
-
-                <span class="achievement-icon">
-                    💻
-                </span>
-
-                <h3>
-                    Coding Achievement
-                </h3>
-
-                <p>
-                    Add your coding achievement here.
-                </p>
-
-            </article>
-
-
-            <article class="achievement-card">
-
-                <span class="achievement-icon">
-                    🚀
-                </span>
-
-                <h3>
-                    Workshop / Hackathon
-                </h3>
-
-                <p>
-                    Add your event or hackathon details here.
-                </p>
-
-            </article>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- ================= RESUME ================= -->
-
-<section class="resume-section">
-
-    <div class="container">
-
-        <div class="resume-box">
-
-            <div>
-
-                <p class="resume-small">
-                    WANT TO KNOW MORE?
-                </p>
-
-                <h2>
-                    Check out my
-                    <span>Resume</span>
-                </h2>
-
-                <p>
-                    Download my resume to learn more about
-                    my education, skills and experience.
-                </p>
-
-            </div>
-
-
-            <div class="resume-buttons">
-
-                <a href="resume.pdf"
-                   download
-                   class="btn primary-btn">
-
-                    Download Resume ↓
-
-                </a>
-
-                <a href="resume.pdf"
-                   target="_blank"
-                   class="btn secondary-btn">
-
-                    View Resume
-
-                </a>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- ================= CONTACT ================= -->
-
-<section id="contact" class="section dark-section">
-
-    <div class="container">
-
-        <div class="section-heading">
-
-            <p>GET IN TOUCH</p>
-
-            <h2>
-                Let's <span>Connect</span>
-            </h2>
-
-        </div>
-
-
-        <div class="contact-grid">
-
-
-            <div class="contact-info">
-
-                <h3>
-                    Have a project in mind?
-                </h3>
-
-                <p>
-                    Feel free to contact me if you want
-                    to discuss a project, opportunity or
-                    simply say hello.
-                </p>
-
-
-                <div class="contact-item">
-
-                    <span>✉</span>
-
-                    <div>
-
-                        <small>Email</small>
-
-                        <a href="mailto:yarlapalli.deepak@gmail.com">
-
-                            yarlapalli.deepak@gmail.com
-
-                        </a>
-
-                    </div>
-
-                </div>
-
-
-                <div class="contact-item">
-
-                    <span>📍</span>
-
-                    <div>
-
-                        <small>Location</small>
-
-                        <p>India</p>
-
-                    </div>
-
-                </div>
-
-
-                <div class="contact-item">
-
-                    <span>💻</span>
-
-                    <div>
-
-                        <small>GitHub</small>
-
-                        <a href="#" target="_blank">
-                            Your GitHub Profile
-                        </a>
-
-                    </div>
-
-                </div>
-
-
-                <div class="contact-item">
-
-                    <span>in</span>
-
-                    <div>
-
-                        <small>LinkedIn</small>
-
-                        <a href="#" target="_blank">
-                            Your LinkedIn Profile
-                        </a>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <form class="contact-form"
-                  action="#"
-                  method="POST">
-
-                <div class="input-row">
-
-
-                    <div class="input-group">
-
-                        <label for="name">
-                            Your Name
-                        </label>
-
-                        <input
-                            type="text"
-                            id="name"
-                            name="name"
-                            placeholder="Enter your name"
-                            required
-                        >
-
-                    </div>
-
-
-                    <div class="input-group">
-
-                        <label for="email">
-                            Email
-                        </label>
-
-                        <input
-                            type="email"
-                            id="email"
-                            name="email"
-                            placeholder="Enter your email"
-                            required
-                        >
-
-                    </div>
-
-                </div>
-
-
-                <div class="input-group">
-
-                    <label for="subject">
-                        Subject
-                    </label>
-
-                    <input
-                        type="text"
-                        id="subject"
-                        name="subject"
-                        placeholder="Enter subject"
-                        required
-                    >
-
-                </div>
-
-
-                <div class="input-group">
-
-                    <label for="message">
-                        Message
-                    </label>
-
-                    <textarea
-                        id="message"
-                        name="message"
-                        rows="6"
-                        placeholder="Write your message..."
-                        required
-                    ></textarea>
-
-                </div>
-
-
-                <button type="submit"
-                        class="btn primary-btn">
-
-                    Send Message →
-
-                </button>
-
-            </form>
-
-        </div>
-
-    </div>
-
-</section>
+  </section>
 
 </main>
 
-
-<!-- ================= FOOTER ================= -->
-
-<footer>
-
-    <div class="container footer-container">
-
-        <div class="footer-logo">
-            &lt;<span>Deepak</span>/&gt;
-        </div>
-
-        <p>
-            Building ideas. Learning technology.
-            Creating the future.
-        </p>
-
-
-        <div class="footer-socials">
-
-            <a href="mailto:yarlapalli.deepak@gmail.com">
-                Email
-            </a>
-
-            <a href="#" target="_blank">
-                GitHub
-            </a>
-
-            <a href="#" target="_blank">
-                LinkedIn
-            </a>
-
-        </div>
-
-
-        <p class="copyright">
-
-            © 2026 Deepak. All Rights Reserved.
-
-        </p>
-
-    </div>
-
+<footer class="footer">
+  <p>Designed &amp; built by Deepak <span class="footer-dot">·</span> <span id="year"></span></p>
 </footer>
 
+<script>
+  // Active nav link on scroll
+  const sections = document.querySelectorAll('section, header.hero');
+  const navLinks = document.querySelectorAll('.nav-link');
 
-<a href="#home" class="back-top">
-    ↑
-</a>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const id = entry.target.getAttribute('id');
+        navLinks.forEach(link => {
+          link.classList.toggle('active', link.getAttribute('href') === `#${id}`);
+        });
+      }
+    });
+  }, { rootMargin: '-40% 0px -55% 0px' });
+
+  sections.forEach(sec => observer.observe(sec));
+
+  // Navbar background on scroll
+  const navbar = document.getElementById('navbar');
+  window.addEventListener('scroll', () => {
+    navbar.classList.toggle('scrolled', window.scrollY > 40);
+  });
+
+  // Mobile nav toggle
+  const navToggle = document.getElementById('navToggle');
+  const navLinksList = document.querySelector('.nav-links');
+  navToggle.addEventListener('click', () => {
+    const isOpen = navLinksList.classList.toggle('open');
+    navToggle.classList.toggle('open', isOpen);
+    navToggle.setAttribute('aria-expanded', isOpen);
+  });
+  navLinksList.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => {
+      navLinksList.classList.remove('open');
+      navToggle.classList.remove('open');
+      navToggle.setAttribute('aria-expanded', false);
+    });
+  });
+
+  // Animate skill bars when visible
+  const skillFills = document.querySelectorAll('.skill-fill');
+  const skillObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.style.width = 'var(--level)';
+        skillObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.4 });
+  skillFills.forEach(el => skillObserver.observe(el));
+
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
 
 </body>
 </html>
